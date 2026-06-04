@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Прайс — LUNA Beauty Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Mulish:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 — подключаем готовую сетку, компоненты и утилиты -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.min.css">
+  <link rel="stylesheet" href="css\price.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container-fluid px-5 d-flex justify-content-between align-items-center">
+      <img src="img\Frame11.png" class="logo" alt="Логотип салона">
+      <nav class="d-flex gap-4">
+        <a href="services.html">Услуги</a>
+        <a href="#">Онлайн-запись</a>
+        <a href="price.html">Прайс</a>
+        <a href="index.html">Главная страница</a>
+        <a href="#">О салоне</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- Классы Bootstrap:
+           .accordion           — обёртка аккордеона
+           .accordion-item      — один элемент
+           .accordion-header    — заголовок (кнопка)
+           .accordion-collapse  — скрываемое тело
+           .accordion-body      — содержимое
+           .collapse / .show    — управление видимостью
+         data-bs-toggle / data-bs-target — JS Bootstrap
+         управляет раскрытием без написания JS вручную. -->
+    <section class="py-4 bg-white">
+      <div class="container">
+        <h1 class="page-title text-center mb-1">Прайс-лист</h1>
+        <p class="page-sub text-center mb-4">Актуальные цены на услуги студии</p>
+
+        <div class="accordion" id="priceAccordion">
+          <div class="accordion-item border-0 mb-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button acc-btn" type="button"
+                data-bs-toggle="collapse" data-bs-target="#cat1">
+                Макияж
+              </button>
+            </h2>
+            <div id="cat1" class="accordion-collapse collapse show" data-bs-parent="#priceAccordion">
+              <div class="accordion-body">
+                <div class="row g-2">
+                  <div class="col-12 col-md-6"><div class="price-row"><span>Дневной макияж</span><span>2500 Р</span></div></div>
+                  <div class="col-12 col-md-6"><div class="price-row"><span>Вечерний макияж</span><span>3200 Р</span></div></div>
+                  <div class="col-12 col-md-6"><div class="price-row"><span>Свадебный макияж</span><span>4500 Р</span></div></div>
+                  <div class="col-12 col-md-6"><div class="price-row"><span>Лифтинг-макияж</span><span>3000 Р</span></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-0 mb-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button acc-btn collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#cat2">
+                Брови и ресницы
+              </button>
+            </h2>
+            <div id="cat2" class="accordion-collapse collapse" data-bs-parent="#priceAccordion">
+              <div class="accordion-body">
+                <div class="row g-2">
+                  <div class="col-12 col-md-6"><div class="price-row"><span>Оформление бровей</span><span>900 Р</span></div></div>
+                  <div class="col-12 col-md-6"><div class="price-row"><span>Окрашивание бровей</span><span>900 Р</span></div></div>
+                  <div class="col-12 col-md-6"><div class="price-row"><span>Ламинирование бровей</span><span>2000 Р</span></div></div>
+                  <div class="col-12 col-md-6"><div class="price-row"><span>Ламинирование ресниц</span><span>2200 Р</span></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-0 mb-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button acc-btn collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#cat3">
+                Волосы
+              </button>
+            </h2>
+            <div id="cat3" class="accordion-collapse collapse" data-bs-parent="#priceAccordion">
+              <div class="accordion-body">
+                <div class="row g-2">
+                  <div class="col-12 col-md-6"><div class="price-row"><span>Женская стрижка</span><span>1800 Р</span></div></div>
+                  <div class="col-12 col-md-6"><div class="price-row"><span>Мужская стрижка</span><span>1200 Р</span></div></div>
+                  <div class="col-12 col-md-6"><div class="price-row"><span>Укладка волос</span><span>1500 Р</span></div></div>
+                  <div class="col-12 col-md-6"><div class="price-row"><span>Окрашивание волос</span><span>4000 Р</span></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-0 mb-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button acc-btn collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#cat4">
+                Косметология
+              </button>
+            </h2>
+            <div id="cat4" class="accordion-collapse collapse" data-bs-parent="#priceAccordion">
+              <div class="accordion-body">
+                <div class="row g-2">
+                  <div class="col-12 col-md-6"><div class="price-row"><span>Чистка лица</span><span>3000 Р</span></div></div>
+                  <div class="col-12 col-md-6"><div class="price-row"><span>Уходовая процедура</span><span>2500 Р</span></div></div>
+                  <div class="col-12 col-md-6"><div class="price-row"><span>Массаж лица</span><span>2000 Р</span></div></div>
+                  <div class="col-12 col-md-6"><div class="price-row"><span>Маска для лица</span><span>1200 Р</span></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0 mb-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button acc-btn collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#cat5">
+                Ногтевой сервис
+              </button>
+            </h2>
+            <div id="cat5" class="accordion-collapse collapse" data-bs-parent="#priceAccordion">
+              <div class="accordion-body">
+                <div class="row g-2">
+                  <div class="col-12 col-md-6"><div class="price-row"><span>Маникюр</span><span>1200 Р</span></div></div>
+                  <div class="col-12 col-md-6"><div class="price-row"><span>Маникюр с покрытием</span><span>1800 Р</span></div></div>
+                  <div class="col-12 col-md-6"><div class="price-row"><span>Педикюр</span><span>2000 Р</span></div></div>
+                  <div class="col-12 col-md-6"><div class="price-row"><span>Педикюр с покрытием</span><span>2200 Р</span></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="d-flex justify-content-center mt-4">
+          <button class="site-btn">Записаться</button>
+        </div>
+      </div>
+    </section>
+
+
+<!--
+Bootstrap сетка:
+.container — ограничивает ширину и центрирует
+.col-12    — на мобильном каждая карточка на всю ширину
+.col-sm-6  — на планшете 2 карточки в ряд
+.col-lg-3  — на десктопе 4 карточки в ряд
+.g-3       — отступы между колонками и строками-->
+    <section class="py-4">
+      <div class="container">
+
+       <div class="d-flex justify-content-between align-items-center mb-3 mt-4">
+  <h2 class="sec-title mb-0">Услуги для девушек</h2>
+  <div class="d-flex gap-2">
+    <button type="button" class="arr-btn girls-prev">←</button>
+    <button type="button" class="arr-btn girls-next">→</button>
+  </div>
+</div>
+
+        <div class="flexslider cards-slider girls-slider">
+  <ul class="slides">
+
+    <li>
+      <div class="scard">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <h3 class="scard-title">Оформление бровей</h3>
+          <button class="circ-btn">↗</button>
+        </div>
+        <p class="scard-text">Подбор идеальной формы с учётом черт лица, коррекция и окрашивание.</p>
+        <img src="img\brows.jpg" class="scard-img" alt="Оформление бровей">
+      </div>
+    </li>
+
+    <li>
+      <div class="scard">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <h3 class="scard-title">Массаж лица</h3>
+          <button class="circ-btn">↗</button>
+        </div>
+        <p class="scard-text">Детальная техника, улучшающая тонус кожи и кровообращение.</p>
+        <img src="img\face-massage.jpg" class="scard-img" alt="Массаж лица">
+      </div>
+    </li>
+
+    <li>
+      <div class="scard">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <h3 class="scard-title">Ламинирование ресниц</h3>
+          <button class="circ-btn">↗</button>
+        </div>
+        <p class="scard-text">Природный изгиб, объём и выразительность без накладных.</p>
+        <img src="img\lashes.jpg" class="scard-img" alt="Ламинирование ресниц">
+      </div>
+    </li>
+
+    <li>
+      <div class="scard">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <h3 class="scard-title">Педикюр</h3>
+          <button class="circ-btn">↗</button>
+        </div>
+        <p class="scard-text">Уход за стопами, обработка кожи и ногтей для комфорта и эстетики.</p>
+        <img src="img\pedicure.jpg" class="scard-img" alt="Педикюр">
+      </div>
+    </li>
+
+  </ul>
+</div>
+        <div class="d-flex justify-content-between align-items-center mb-3 mt-5">
+  <h2 class="sec-title mb-0">Услуги для мужчин</h2>
+  <div class="d-flex gap-2">
+    <button type="button" class="arr-btn men-prev">←</button>
+    <button type="button" class="arr-btn men-next">→</button>
+  </div>
+</div>
+
+       <div class="flexslider cards-slider men-slider">
+  <ul class="slides">
+
+    <li>
+      <div class="scard">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <h3 class="scard-title">Мужская стрижка</h3>
+          <button class="circ-btn">↗</button>
+        </div>
+        <p class="scard-text">Стрижка с учётом формы головы и структуры волос. Создаёт аккуратный и современный внешний вид.</p>
+        <img src="img\men-haircut.jpg" class="scard-img" alt="Мужская стрижка">
+      </div>
+    </li>
+
+    <li>
+      <div class="scard">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <h3 class="scard-title">Мужской маникюр</h3>
+          <button class="circ-btn">↗</button>
+        </div>
+        <p class="scard-text">Уход за ногтями и кожей рук без покрытия. Аккуратный результат.</p>
+        <img src="img\men-manicure.jpg" class="scard-img" alt="Мужской маникюр">
+      </div>
+    </li>
+
+    <li>
+      <div class="scard">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <h3 class="scard-title">Коррекция бровей</h3>
+          <button class="circ-btn">↗</button>
+        </div>
+        <p class="scard-text">Лёгкая коррекция формы без изменения естественного вида.</p>
+        <img src="img\men-brows.jpg" class="scard-img" alt="Коррекция бровей">
+      </div>
+    </li>
+
+    <li>
+      <div class="scard">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <h3 class="scard-title">Чистка лица</h3>
+          <button class="circ-btn">↗</button>
+        </div>
+        <p class="scard-text">Глубокое очищение, удаление загрязнений и излишков жира.</p>
+        <img src="img\face-cleaning.jpg" class="scard-img" alt="Чистка лица">
+      </div>
+    </li>
+
+  </ul>
+</div>
+        <div class="d-flex justify-content-center mt-4">
+          <button class="site-btn">Посмотреть отзывы</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container-fluid px-5 d-flex justify-content-between align-items-center">
+      <img src="img\Frame11.png" class="logo" alt="Логотип салона">
+      <nav class="d-flex gap-4">
+        <a href="services.html">Услуги</a>
+        <a href="#">Онлайн-запись</a>
+        <a href="price.html">Прайс</a>
+        <a href="index.html">Главная страница</a>
+        <a href="#">О салоне</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider-min.js"></script>
+
+<script>
+  $(window).on('load', function() {
+
+    $('.girls-slider').flexslider({
+      animation: 'slide',
+      animationLoop: true,
+      itemWidth: 257,
+      itemMargin: 18,
+      minItems: 1,
+      maxItems: 3,
+      move: 1,
+      controlNav: false,
+      directionNav: false,
+      slideshow: false
+    });
+
+    $('.men-slider').flexslider({
+      animation: 'slide',
+      animationLoop: true,
+      itemWidth: 257,
+      itemMargin: 18,
+      minItems: 1,
+      maxItems: 3,
+      move: 1,
+      controlNav: false,
+      directionNav: false,
+      slideshow: false
+    });
+
+    $('.girls-prev').on('click', function() {
+      $('.girls-slider').flexslider('prev');
+    });
+
+    $('.girls-next').on('click', function() {
+      $('.girls-slider').flexslider('next');
+    });
+
+    $('.men-prev').on('click', function() {
+      $('.men-slider').flexslider('prev');
+    });
+
+    $('.men-next').on('click', function() {
+      $('.men-slider').flexslider('next');
+    });
+
+  });
+</script>
+</body>
+</html>
